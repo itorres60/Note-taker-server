@@ -2,6 +2,7 @@
 const express = require('express');
 const path = require('path');
 const { notes } = require('./data/db')
+var notesID = 1;
 
 //===============================================================================
 // create an instance of express to serve our end points
@@ -36,7 +37,7 @@ app.get('*', (req, res) => {
 });
 
 app.post('/api/notes', (req, res) => {
-  req.body.id = notes.length.toString();
+  req.body.id = `"${notesID++}"`;
 
   const newNote = req.body;
   console.log(newNote);
@@ -64,8 +65,8 @@ app.delete('/api/notes/:id', (req, res)  => {
   console.log(note);
 
   for (let i = 0; i < notes.length; i++) {
-    if (note === notes[i].id) {
-      notes.splice(note, 1)
+    if (notes[i].id === note) {
+      notes.splice(i, 1)
     }
   }
 

@@ -8,12 +8,15 @@ Before:
 After:
 ![After delete Screenshot](/screenshots/after.png "After delete")
 
-Delte code:
+Delete code:
 ![Code for delete Screenshot](/screenshots/delete-code.png "Code for delete")
 
 The process to post data to our array of objects works perectly and unique ID's are added to every new entry.  Here is the screenshot demonstrating the array with said details:
 
 ![Api Screenshot](/screenshots/api.png "Api delete")
+
+Here is the code for adding unique IDs that are never duplicated:
+![ID code Screenshot](/screenshots/id.png "ID code")
 
 
 Here is a link to the deployed site via Heroku:
