@@ -1,0 +1,24 @@
+{
+  "name": "miniature-eureka",
+  "version": "1.0.0",
+  "description": "AS A small business owner I WANT to be able to write and save notes SO THAT I can organize my thoughts and keep track of tasks I need to complete",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coding-boot-camp/miniature-eureka.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coding-boot-camp/miniature-eureka/issues"
+  },
+  "homepage": "https://github.com/coding-boot-camp/miniature-eureka#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
