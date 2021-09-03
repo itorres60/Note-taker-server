@@ -1,6 +1,6 @@
 # Note-taker-server
 
-Out depolyed not taking application has the functionality to save, view and delete notes.  Here are the before and after pictures of the delete process as well as the route pertaining to the delete function:
+My depolyed note-taking application has the functionality to save, view and delete notes.  Here are the before and after pictures of the delete process as well as the route pertaining to the delete function:
 
 Before:
 ![Before delete Screenshot](/screenshots/before.png "Before delete")
