@@ -19,16 +19,6 @@ app.use(express.json());
 app.use(express.static('public'));
 //===============================================================================
 
-const hide = (elem) => {
-  elem.style.display = 'none';
-};
-
-
-
-
-
-
-//===============================================================================
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/index.html'));
 });
@@ -47,6 +37,7 @@ app.get('*', (req, res) => {
 
 app.post('/api/notes', (req, res) => {
   req.body.id = notes.length.toString();
+
   const newNote = req.body;
   console.log(newNote);
   notes.push(newNote);
