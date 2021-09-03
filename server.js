@@ -41,6 +41,18 @@ app.get('/api/notes', (req, res) => {
   return res.json(notes)
 });
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/index.html'));
+});
+
+app.post('/api/notes', (req, res) => {
+  req.body.id = notes.length.toString();
+  const newNote = req.body;
+  console.log(newNote);
+  notes.push(newNote);
+  res.json(newNote);
+});
+
 app.get('/api/notes/:id', (req, res) => {
   const note = req.params.id;
 
@@ -53,14 +65,6 @@ app.get('/api/notes/:id', (req, res) => {
   }
 
   return res.json(false);
-});
-
-app.post('/api/notes', (req, res) => {
-  req.body.id = notes.length.toString();
-  const newNote = req.body;
-  console.log(newNote);
-  notes.push(newNote);
-  res.json(newNote);
 });
 
 app.delete('/api/notes/:id', (req, res)  => {
