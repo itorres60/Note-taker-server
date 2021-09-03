@@ -6,6 +6,7 @@ const { notes } = require('./data/db')
 //===============================================================================
 // create an instance of express to serve our end points
 const app = express();
+const PORT = process.env.PORT || 3001;
 
 // we'll load up node's built in file system helper library here
 // (we'll be using this later to serve our JSON files
@@ -79,7 +80,7 @@ app.delete('/api/notes/:id', (req, res)  => {
 
 
 // finally, launch our server on port 3001.
-const server = app.listen(3001, () => {
+const server = app.listen(PORT, () => {
   console.log('listening on port %s...', server.address().port);
 });
 
