@@ -8,7 +8,7 @@ Before:
 After:
 ![After delete Screenshot](/screenshots/after.png "After delete")
 
-Delte code:
+Delete code:
 ![Code for delete Screenshot](/screenshots/delete-code.png "Code for delete")
 
 The process to post data to our array of objects works perectly and unique ID's are added to every new entry.  Here is the screenshot demonstrating the array with said details:
